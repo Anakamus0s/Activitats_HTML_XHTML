@@ -12,17 +12,44 @@
     <form>
     <fieldset>
         <legend>Datos básicos</legend>
-        <label for="nombre">Nombre:</label>
+        <label for="nombre">Nombre <br> </label>
         <input type="text" id="nombre" size="45" />
-
-        
-
-
-
-
+        <br>
+        <br>
+        <label for="Descripcion">Descripcion <br> </label>
+        <textarea name="areatexto" id="Descripcion" cols="30" rows="5"></textarea>
+        <br>
+        <br>
+        <label for="foto">Foto</label>
+        <input type="file" id="foto">
+        <br>
+        <br>
+        <input type="checkbox">Añadir contador de visitas
 
     </fieldset>
 
+    <fieldset>
+            <legend>Datos economicos</legend>
+            <label for="Precios">Precios
+                <input type="number" id="Precios">
+            €</label>
+
+            <label for="impuestos">Impuestos</label>
+            <select name="impuestos" id="impuestos">
+                <option value="4">4%</option>
+                <option value="10">10%</option>
+                <option value="21">21%</option>
+            </select>
+            <br>
+            <br>
+            <label for="promocion">Promoción</label>
+            <br>
+            <input type="radio" name="promocion" id="ninguno">Ninguno
+            <br>
+            <input type="radio" name="promocion" id="Transporte">Transporte
+            <br>
+            <input type="radio" name="promocion" id="descuento">Descuento 5%
+    </fieldset>
 
 
 
